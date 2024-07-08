@@ -1,8 +1,10 @@
+import AddUser from "./components/addUser/AddUser";
+
 const App = () => {
   
   return (
     <div>
-      <h1>Hello</h1>
+      <AddUser />
     </div>
   );
 };
