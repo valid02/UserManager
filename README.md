@@ -1,65 +1,78 @@
 # UserManager
 
-این پروژه با [Create React App](https://github.com/facebook/create-react-app) ساخته شده است.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## معرفی پروژه
+## Project Overview
 
-UserManager یک پروژه تمرینی برای تمرین ویژگی‌های اصلی React است. این اپلیکیشن شامل قابلیت‌های زیر می‌باشد:
+UserManager is a practice project to exercise core features of React. The application includes the following features:
 
-- اضافه کردن کاربر با نام و سن
-- ویرایش اطلاعات کاربر
-- حذف کاربر
+- Adding a user with name and age
+- Editing user information
+- Deleting a user
 
-## دستورات موجود
+## Available Scripts
 
-در دایرکتوری پروژه، شما می‌توانید دستورات زیر را اجرا کنید:
+In the project directory, you can run:
 
 ### `npm start`
 
-اپلیکیشن را در حالت توسعه اجرا می‌کند.\
-باز کنید [http://localhost:3000](http://localhost:3000) در مرورگر خود برای مشاهده.
+Runs the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-صفحه با اعمال تغییرات، دوباره بارگذاری خواهد شد.\
-همچنین می‌توانید هرگونه خطای lint را در کنسول مشاهده کنید.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
 ### `npm test`
 
-تستر را در حالت watch اجرا می‌کند.\
-بخش مربوط به [اجرای تست‌ها](https://facebook.github.io/create-react-app/docs/running-tests) برای اطلاعات بیشتر را مشاهده کنید.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-اپلیکیشن را برای تولید در پوشه `build` می‌سازد.\
-به درستی React را در حالت تولید bundle می‌کند و ساخت را برای بهترین عملکرد بهینه‌سازی می‌کند.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-ساخت minified می‌شود و نام فایل‌ها شامل hashها می‌شوند.\
-اپلیکیشن شما آماده برای استقرار است!
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-بخش مربوط به [استقرار](https://facebook.github.io/create-react-app/docs/deployment) را برای اطلاعات بیشتر مشاهده کنید.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
-**توجه: این یک عملیات یک‌طرفه است. پس از اجرای `eject`، نمی‌توانید به حالت قبلی برگردید!**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-اگر از ابزار ساخت و تنظیمات پیش‌فرض راضی نیستید، می‌توانید در هر زمانی `eject` کنید. این دستور وابستگی‌های ساخت را از پروژه شما حذف می‌کند.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-به جای آن، همه فایل‌های تنظیمات و وابستگی‌های ترانزیتیو (webpack, Babel, ESLint, etc) را مستقیماً به پروژه شما کپی می‌کند تا کنترل کامل بر روی آنها داشته باشید. همه دستورات به جز `eject` همچنان کار خواهند کرد، اما به اسکریپت‌های کپی شده اشاره می‌کنند تا بتوانید آنها را تغییر دهید. در این نقطه شما به تنهایی ادامه می‌دهید.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-هرگز مجبور نیستید از `eject` استفاده کنید. مجموعه ویژگی‌های فراهم شده برای استقرارهای کوچک و میانه مناسب است و شما نباید احساس اجبار کنید که از این ویژگی استفاده کنید. با این حال، ما درک می‌کنیم که این ابزار زمانی مفید خواهد بود که آماده‌ی تنظیم آن باشید.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## اطلاعات بیشتر
+## Learn More
 
-برای کسب اطلاعات بیشتر می‌توانید به [مستندات Create React App](https://facebook.github.io/create-react-app/docs/getting-started) مراجعه کنید.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-برای یادگیری React، به [مستندات React](https://reactjs.org/) مراجعه کنید.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### بخش‌های کد
+### Code Splitting
 
-این بخش‌ها به منابع مختلف مستندات Create React App منتقل شده‌اند:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- [Split کردن کد](https://facebook.github.io/create-react-app/docs/code-splitting)
-- [تحلیل اندازه بسته](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-- [ساخت یک Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-- [پیکربندی پیشرفته](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-- [استقرار](https://facebook.github.io/create-react-app/docs/deployment)
-- [مشکلات مربوط به `npm run build` و minify نشدن](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
