@@ -1,7 +1,13 @@
-.input-box {
+.users-list {
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
   margin-top: 30px;
   padding: 1rem;
+}
+
+.users-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
