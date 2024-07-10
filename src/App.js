@@ -35,6 +35,7 @@ const App = () => {
     setUsersList(prevUsersList => {
       return prevUsersList.filter(user => user.id !== userId);
     });
+    setEditingUser(null);
   }
   
   return (
