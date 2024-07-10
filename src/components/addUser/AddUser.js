@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "../UI/Button/Button";
 import Card from "../UI/Card/Card";
 import Input from "../UI/Input/Input";
@@ -10,6 +10,13 @@ const AddUser = props => {
 
   const nameInputRef = useRef();
   const ageInputRef = useRef();
+
+  useEffect(() => {
+    if (props.editingUser) {
+      nameInputRef.current.value = props.editingUser.username;
+      ageInputRef.current.value = props.editingUser.age;
+    }
+  }, [props.editingUser]);
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
@@ -46,7 +53,9 @@ const AddUser = props => {
         <form onSubmit={formSubmitHandler}>
           <Input id="username" label="Username" type="text" ref={nameInputRef} />
           <Input id="age" label="Age" type="number" ref={ageInputRef} />
-          <Button type="submit">Add User</Button>
+          <Button type="submit">
+            {props.editingUser ? 'Edit User' : 'Add User'}
+          </Button>
         </form>
       </Card>
     </>
