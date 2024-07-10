@@ -48,7 +48,7 @@ const AddUser = props => {
 
   return (
     <>
-      {erorr && <ErrorModal title={erorr.title} message={erorr.message} onClose={() => setError(null)} />}
+      {erorr && <ErrorModal title={erorr.title} message={erorr.message} closeButtonText='Okay' onClose={() => setError(null)} />}
       <Card className={classes['input-box']}>
         <form onSubmit={formSubmitHandler}>
           <Input id="username" label="Username" type="text" ref={nameInputRef} />

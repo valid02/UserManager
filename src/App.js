@@ -30,11 +30,17 @@ const App = () => {
     topRef.current.scrollIntoView({ behavior: 'smooth' });
     setEditingUser(user);
   }
+
+  const deleteUserHandler = userId => {
+    setUsersList(prevUsersList => {
+      return prevUsersList.filter(user => user.id !== userId);
+    });
+  }
   
   return (
     <div ref={topRef}>
       <AddUser onAddUser={addUserHandler} editingUser={editingUser} />
-      <UserList users={usersList} onEditUser={startEditUserHandler} />
+      <UserList users={usersList} onEditUser={startEditUserHandler} onDeleteUser={deleteUserHandler} />
     </div>
   );
 };

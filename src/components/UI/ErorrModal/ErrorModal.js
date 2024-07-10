@@ -17,7 +17,8 @@ const ModalOverlay = (props) => {
         <p>{props.message}</p>
       </div>
       <footer className={classes.actions}>
-        <Button onClick={props.onClose}>Okay</Button>
+        <Button onClick={props.onClose}>{props.closeButtonText}</Button>
+        {props.confirmButtonText && <Button onClick={props.onConfirm}>{props.confirmButtonText}</Button>}
       </footer>
     </Card>
   );
@@ -34,7 +35,10 @@ const ErrorModal = props => {
         <ModalOverlay
           title={props.title}
           message={props.message}
+          closeButtonText={props.closeButtonText}
           onClose={props.onClose}
+          onConfirm={props.onConfirm}
+          confirmButtonText={props.confirmButtonText}
         />,
         document.getElementById('overlay-root')
       )}
